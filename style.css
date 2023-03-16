@@ -1,0 +1,22 @@
+.filter-field-char-multi .values-container > div {
+    display: none;
+}
+.filter-field-char-multi .values-container > div:nth-child(-n+4) {
+    display: block;
+}
+.filter-field-char-multi .values-container > div:nth-child(5) ~ span.multi-showmore {
+    display: block;
+    margin: 10px;
+}
+.filter-field-char-multi .values-container > div:nth-child(5) ~ span.multi-showmore:before {
+    content: 'Смотреть все';
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.filter-field-char-multi .values-container.opened > div {
+    display: block;
+}
+.filter-field-char-multi .values-container.opened > div:nth-child(5) ~ span.multi-showmore:before {
+    content: 'Свернуть';
+}
